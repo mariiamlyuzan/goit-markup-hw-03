@@ -354,8 +354,8 @@ margin-right: 0;
     margin-right: 30px;
     margin-bottom: 30px;
    
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
     overflow: hidden;
 }
 
@@ -386,8 +386,8 @@ margin-right: 0;
 .content {
     padding: 20px 24px;
     border: 1px solid var(--primary-background-color);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
 }
 
  /*Footer nav*/
