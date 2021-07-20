@@ -50,6 +50,12 @@ ul {
     color: var(--primary-white-color);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
  /* Page-header */
 
  .page-header {
@@ -212,7 +218,6 @@ ul {
 
 .work-li .item {
     margin-right: 30px;
-
 }
 
 .work-li .item:nth-child(3n) {
@@ -348,6 +353,10 @@ margin-right: 0;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+   
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
 }
 
 .projects .item:nth-child(3n) {
@@ -371,12 +380,14 @@ margin-right: 0;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-
     margin-bottom: 20px;
 }
 
 .content {
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border: 1px solid var(--primary-background-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
  /*Footer nav*/
