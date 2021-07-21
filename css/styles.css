@@ -1,6 +1,6 @@
 :root {
     --primary-text-color: #757575;
-    --primary-background-color: #E5E5E5;
+    --primary-background-color: #F5F4FA;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --primary-section-color: #2F303A;
@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: Roboto, Helvetica, sans-serif;
 }
@@ -59,7 +59,6 @@ img {
  /* Page-header */
 
  .page-header {
-     background-color: var(--primary-white-color);
      border-bottom: 3px solid var(--primary-background-color);
  }
 
@@ -164,10 +163,6 @@ img {
 
  /*Skills*/
 
- .skill  {
-    background-color: var(--primary-white-color);
- } 
-
  .skills {
     display: flex;
     margin-right: -15px;
@@ -197,10 +192,6 @@ img {
 
  /*Work*/
 
-.work {
-    background-color: var(--primary-white-color);
-}
-
 .work .title {
     font-size: 36px;
     font-weight: 700;
@@ -226,7 +217,11 @@ img {
 
  /*Team*/
 
-.team .main-title { 
+.team-work {
+    background-color: var(--primary-background-color);
+}
+
+.team-work .main-title { 
     color: var(--primary-black-color);
     font-size: 36px;
     font-weight: 700;
@@ -240,7 +235,6 @@ img {
 .team {
     display: flex;
     padding: 0;
-
 }
 
 .team .item {
