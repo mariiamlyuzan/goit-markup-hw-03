@@ -59,7 +59,7 @@ img {
  /* Page-header */
 
  .page-header {
-     border-bottom: 3px solid var(--primary-background-color);
+     border-bottom: 1px solid #ECECEC;
  }
 
  /* Basic-nav*/
@@ -77,8 +77,6 @@ img {
      width: 1200px;
      padding-left: 15px;
      padding-right: 15px;
-     
-     outline: 2px solid tomato;
  }
 
 .site-nav .link {
@@ -133,13 +131,10 @@ img {
     color: var(--accent-color);
 }
 
-.title {
-    color: var(--primary-title-color);
-}
-
  /*Hero*/
 
 .hero { 
+    padding: 200px 0;
     text-align: center;
     background-color: var(--primary-section-color);
 }
@@ -163,27 +158,30 @@ img {
 
  /*Skills*/
 
- .skills {
+ .advantage {
     display: flex;
     margin-right: -15px;
+    padding: 0;
  }
 
-.skills .item {
+.advantage .item {
     width: 270px;
     margin-right: 15px;
 }
 
-.skills .title {
+.advantage-title {
+    color: var(--primary-title-color);
     font-size: 14px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: left;
+    text-transform: uppercase;
 
     margin-bottom: 10px;
 }
 
-.skills .paper { 
+.advantage .paper { 
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -192,7 +190,9 @@ img {
 
  /*Work*/
 
-.work .title {
+.work-title,
+.team-title {
+    color: var(--primary-title-color);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
@@ -202,16 +202,16 @@ img {
     margin-bottom: 50px;
 }
 
-.work-li { 
+.work-list { 
     display: flex;
     padding: 0;
 }
-
-.work-li .item {
+ 
+.work-list .item {
     margin-right: 30px;
 }
 
-.work-li .item:nth-child(3n) {
+.work-list .item:nth-child(3n) {
    margin-right: 0;
 }
 
@@ -219,17 +219,6 @@ img {
 
 .team-work {
     background-color: var(--primary-background-color);
-}
-
-.team-work .main-title { 
-    color: var(--primary-black-color);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-    margin-bottom: 50px;
 }
 
 .team {
@@ -240,7 +229,7 @@ img {
 .team .item {
     background-color: var(--primary-white-color);
     border-bottom: 1px solid ;
-    border-radius: 3px;
+    border-radius: 4px;
     margin-bottom: 94px;
     margin-right: 30px;
 }
@@ -249,13 +238,14 @@ img {
     margin-right: 0;
 }
 
-.name {
+.names {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.team .title {
+.names-title {
+    color: var(--primary-title-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
@@ -264,7 +254,7 @@ img {
     margin-bottom: 10px;
 }
 
-.team .paper {
+.profession {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -301,16 +291,13 @@ img {
     padding: 6px 22px;
     min-width: 73px;
     text-align: center;
+    margin-bottom: 50px;
 
     color: var(--primary-title-color);
     background-color: #F5F4FA;
     border: 1px solid transparent;
     cursor: pointer;
     font-family: inherit;
-}
-
-.btn {
-    background-color: var(--primary-white-color);
 }
 
 .filters {
@@ -332,10 +319,6 @@ margin-right: 0;
 }
 
  /*Projects*/
-
-.project {
-    background-color: var(--primary-white-color);
-}
  
 .projects {
     display: flex;
@@ -347,9 +330,12 @@ margin-right: 0;
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-   
+    
+    border-color: #EEEEEE;
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
     overflow: hidden;
 }
 
@@ -361,7 +347,8 @@ margin-right: 0;
     margin-bottom: 0;
 }
 
-.projects .title {
+.projects-title {
+    color: var(--primary-title-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -370,7 +357,7 @@ margin-right: 0;
     margin-bottom: 4px;
 }
 
-.projects .paper {
+.description {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
@@ -380,14 +367,14 @@ margin-right: 0;
 .content {
     padding: 20px 24px;
     border: 1px solid var(--primary-background-color);
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
 }
 
  /*Footer nav*/
 
 .footer {
     background-color: var(--primary-section-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -407,17 +394,23 @@ margin-right: 0;
 }
 
 .footer-li .item:last-child {
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
  .footer-nav {
     color: var(--primary-white-color);
     font-size: 14px;
     line-height: 1.7;
+    font-style: normal;
+}
+
+.adress-map {
+    color: var(--primary-white-color)
 }
 
 .footer-nav .link {
     color: #FFFFFF99;
+    text-decoration: none;
 }
 
 .footer-nav .link:hover,
